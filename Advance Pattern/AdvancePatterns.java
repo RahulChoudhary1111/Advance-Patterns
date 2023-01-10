@@ -160,65 +160,66 @@ public class AdvancePatterns {
     }
 
     public static void main (String args []){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter no. of lines: ");
-        int a = sc.nextInt();
-        System.out.println("Type 1: for hollow rectangle");
-        System.out.println("Type 2: for inverted and rotated half pyramid");
-        System.out.println("Type 3: for inverted half pyramid ");
-        System.out.println("Type 4: for floyds triangle");
-        System.out.println("Type 5: for zero one triangle");
-        System.out.println("Type 6: to print butterfly");
-        System.out.println("Type 7: to print solid rhombus");
-        System.out.println("Type 8: to print hollow rhombus");
-        System.out.println("Type 9: to print diamond");
-        System.out.println("Type 10: to print number pyramid");
-        System.out.println("Type 11: to print palindromic pattern");
-        int choice = sc.nextInt();
-        switch(choice){
-            case 1:  
-                hollow_rectangle(a);
-                break;
-            case 2: 
-                inverted_and_rotated_half_pyramid(a);
-                break;
-            case 3:
-                inverted_half_pyramid(a);
-                break;
-            
-            case 4:
-                floyds_triangle(a);
-                break;
-            
-            case 5:
-                zero_one_triangle(a);
-                break;
-
-            case 6:
-                butterfly(a);
-                break; 
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("enter no. of lines: ");
+            int a = sc.nextInt();
+            System.out.println("Type 1: for hollow rectangle");
+            System.out.println("Type 2: for inverted and rotated half pyramid");
+            System.out.println("Type 3: for inverted half pyramid ");
+            System.out.println("Type 4: for floyds triangle");
+            System.out.println("Type 5: for zero one triangle");
+            System.out.println("Type 6: to print butterfly");
+            System.out.println("Type 7: to print solid rhombus");
+            System.out.println("Type 8: to print hollow rhombus");
+            System.out.println("Type 9: to print diamond");
+            System.out.println("Type 10: to print number pyramid");
+            System.out.println("Type 11: to print palindromic pattern");
+            int choice = sc.nextInt();
+            switch(choice){
+                case 1:  
+                    hollow_rectangle(a);
+                    break;
+                case 2: 
+                    inverted_and_rotated_half_pyramid(a);
+                    break;
+                case 3:
+                    inverted_half_pyramid(a);
+                    break;
                 
-            case 7:
-                solid_rhombus(a);
-                break;    
+                case 4:
+                    floyds_triangle(a);
+                    break;
+                
+                case 5:
+                    zero_one_triangle(a);
+                    break;
 
-            case 8:
-                hollow_rhombus(a);
-                break;
+                case 6:
+                    butterfly(a);
+                    break; 
                     
-            case 9:
-                diamond(a);
-                break;
-                       
-            case 10:
-                number_pyramid(a);
-                break;
-                    
-            case 11:
-                palindromic_pattern(a);
-                break;
-                    
-            default: System.out.println("enter a valid choice between 1 to 11");
+                case 7:
+                    solid_rhombus(a);
+                    break;    
+
+                case 8:
+                    hollow_rhombus(a);
+                    break;
+                        
+                case 9:
+                    diamond(a);
+                    break;
+                           
+                case 10:
+                    number_pyramid(a);
+                    break;
+                        
+                case 11:
+                    palindromic_pattern(a);
+                    break;
+                        
+                default: System.out.println("enter a valid choice between 1 to 11");
+            }
         }
         
 
